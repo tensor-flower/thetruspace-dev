@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/public/tweet/`,
+        path: `${__dirname}/src/`,
         name: "markdown-pages",
       },
     },
