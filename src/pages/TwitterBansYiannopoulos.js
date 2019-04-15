@@ -9,7 +9,7 @@ const milo = () => (
   <Layout>
     <h1 className = 'h1-title'>Why twitter banned Milo Yiannopoulos - the cultural implications</h1>
     <p className='date'><i>Apr 11, 2019</i></p>
-    <img src={miloP} alt='milo'/>
+    <img src={miloP} alt='milo' title='Milo Yiannopoulos'/>
     <p>Milo Yiannopoulos is a British political commentator, former editor for Breitbart News. He is a provocateur and no stranger to controversy. Yiannopoulos was banned from twitter in July 2016 for harassing comedian and actress Leslie Jones for the role she played in the movie Ghostbusters. Vijaya Gadde, global lead for legal, policy, and trust and safety at Twitter, recently disclosed the official reason twitter banned Milo, on Joe Rogan’s podcast. Yiannopoulos had a number of tweets that violated twitter’s rules going back to 2014. There are three major incidents that caused his account getting banned. </p>
     <p>The first incident is Yiannopoulos claimed to be a buzzfeed "social justice editor" in his twitter bio in December 2015. His account was temporarily suspended and his blue verification checkmark was removed. According to Gadde, what Yiannopoulos did is considered <i>impersonation</i>, which is a violation of the Twitter Rules. When Rogan postulated the possibility of Yiannopoulos doing <i>parody</i>, Gadde responded, "if you are doing parody, you must mention it is a parody account".</p>
     <p>It is interesting to see the <i>cultural divide</i> in this incident alone. People on one side think that there is great sarcasm in Yiannopoulos being an anti PC figure, claiming to be a buzzfeed social justice reporter. Combined with the fact that Yiannopoulos is well known, people should not be misled about his identity. His intention is not to impersonate, but make a mockery. People on the other side think that Yiannopoulos is impersonating a buzzfeed reporter. No matter how well known he is, there are bound to be people who didn’t know Yiannopoulos before and was misled into believing it. He should have issued a disclaimer, otherwise the action of impersonation should be punished regardless of intention.</p>
@@ -28,8 +28,7 @@ const milo = () => (
     <p>No matter what the reasons are, “grains of sand makes a heap”. If the perception that twitter is banning more conservatives persists, at some point, people will question twitter’s motives.</p>
     <p>Again, to answer the question, “is twitter banning Milo because of his conservative beliefs?” Likely not, but the jury is still out. Twitter’s strikes on Yiannopoulos based on impersonation and doxxing still stand. The strike on harassment of Jones may be up for debate, with the reasons presented above.</p>
     <p>Ultimately, Twitter has an incredibly difficult job at regulating content on its platform. Some tweets are censored based on algorithms, which may make mistakes, some are censored based on people reporting on those tweets. According to independent journalist Tim Pool, he generalized that “[some of] the left wants more censorship, [some of] the right wants less”. No matter what actions twitter takes, the social media giant is going to be criticized.</p>
-    <p>For the record, thetruthspace characterizes Milo Yiannopoulos as being on the political right, Joe Rogan and Tim Pool as being on the political left or center.</p>
-    <Share url="www.google.com" title="Why twitter banned Milo Yiannopoulos - the cultural implications"/>
+    <Share url="www.thetruspace.com/TwitterBansYiannopoulos" title="Why twitter banned Milo Yiannopoulos - the cultural implications"/>
   </Layout>
 )
 

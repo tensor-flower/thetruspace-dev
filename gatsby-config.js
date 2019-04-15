@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `thetruspace`,
+        short_name: `truspace`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

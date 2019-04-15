@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import CardList from '../components/cardList'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout style={{height:'100%'}}>
     <SEO title="thetruspace" keywords={[`thetruspace`, `truspace`, `thetruthspace`,`truthspace`]} />
     <CardList />
   </Layout>

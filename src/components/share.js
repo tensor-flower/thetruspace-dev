@@ -9,7 +9,7 @@ import {
 const share = ({url,title}) => (
     <div>
         <p>If you find our content adds value to you, please share our article on twitter (ironic, we know) and facebook.</p>
-        <div style={{display:'flex'}}>
+        <div style={{display:'flex'}} title='share'>
             <FacebookShareButton
                 url={url}
                 hashtag="#thetruspace"

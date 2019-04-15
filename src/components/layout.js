@@ -5,28 +5,42 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React,{Component} from "react"
+import Backdrop from './backdrop/Backdrop'
+import SideDrawer from './sideDrawer/SideDrawer'
 
-import NavBar from "./navBar"
-import "./layout2.css"
+import NavBar from "./navBar/navBar"
+import "./layout3.css"
 import twitterIcon from '../images/twittercopy.png'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
+
+class Layout extends Component {
+  state={
+    sideDrawerOpen:false
+  }
+  
+  drawerToggleClickHandler=()=>{
+    this.setState((prev)=>{
+      return{sideDrawerOpen:!prev.sideDrawerOpen}
+    })
+  }
+
+  backdropClickHandler=()=>{
+    this.setState({sideDrawerOpen:false});
+  }
+  render(){
+    const { children } = this.props;
+    let backDrop;
+    if(this.state.sideDrawerOpen){
+      backDrop=<Backdrop click={this.backdropClickHandler}/>;
+    }
+    return(
       <>
-        <NavBar />
+        <div style={{height:'100%'}}>
+          <NavBar drawerClickHandler={this.drawerToggleClickHandler}/>
+          <SideDrawer show={this.state.sideDrawerOpen}/>
+          {backDrop}
+        </div>
         <div
           style={{
             margin: `0 auto`,
@@ -37,10 +51,10 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <div style={{textAlign:'center',marginTop:'5rem',borderTop:'0.05rem solid'}}>
+          <div style={{textAlign:'center',marginTop:'2rem',borderTop:'0.05rem solid'}}>
             <p style={{marginTop:'3rem',marginBottom:'1rem'}}><strong>The space for truth. Home of the center.</strong></p>
             <a href="https://twitter.com/thetruspace"rel="noopener noreferrer" target="_blank">
-              <img src={twitterIcon} alt='twitter' style={{marginBottom:'0.8rem'}}/>
+              <img src={twitterIcon} alt='twitter' style={{marginBottom:'0.8rem'}} title='@thetruspace'/>
             </a>
             <footer>          
               Copyright © {new Date().getFullYear()} Thetruspace | All Rights Reserved
@@ -49,12 +63,10 @@ const Layout = ({ children }) => (
 
         </div>
       </>
-    )}
-  />
-)
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    )}
 }
+
+
 
 export default Layout
