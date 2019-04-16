@@ -113,7 +113,7 @@ main img {
   .p-link{
     color: black;
     background-color: beige;
-    text-decoration:none;
+    text-decoration:underline;
   }
   .p-link:hover{
     background-color: burlywood;

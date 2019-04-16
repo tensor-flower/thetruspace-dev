@@ -3,7 +3,7 @@ import './burger.css'
 
 const Burger =props=> (
 
-  <button className='burger' onClick={props.click}>
+  <button className='burger' onClick={props.click} aria-label="Menu">
       <div className='burger-line'/>
       <div className='burger-line'/>
       <div className='burger-line'/>

@@ -1,6 +1,6 @@
 import React from "react"
 import miloTweet from '../images/fake.png'
-import miloP from '../images/milo256.jpg'
+import miloP from '../images/milo256copy.jpg'
 import Layout from "../components/layout"
 import wood from '../images/woodchipper.jpg'
 import Share from '../components/share'
