@@ -25,13 +25,13 @@ const alex = () => (
     <p>People on one side of the cultural debate think these are somewhat funny and simply mean things to say. They think words do not cause harm. People should be allowed to say mean things or even hateful speech as long as they do not harm people’s physical safety. People also have the right to confront other people. People on the other side also share these values, but they think these words qualify as harassment in the context of two other incidents. Jones confronted Florida senator Marco Rubio, he also yelled at Dorsey at one point as he was leaving the building. These incidents combined established a pattern and practice of targeted harassment. Gadde mentioned her team does not only look at one video, she views it in the context of other videos and made the decision.</p>
     <Video videoSrcURL="https://www.youtube.com/embed/wuC2tdSPMVg" videoTitle="marco" />
     <p>To address some of the questions, “is twitter banning Alex Jones because he is conservative?” Highly unlikely. If twitter were to ban Jones for that reason, it would have followed its peers in banning him straight away. As a matter of fact, twitter got a lot of heat for not doing that, including from former reddit CEO Ellen Pao, “Your move, @jack. Be a leader with integrity like @tim_cook”.</p>
-    <div style={{display:'flex',justifyContent:'center'}}>
+    <div>
       <TwitterTweetEmbed tweetId={'1026984242893357056'}/>
     </div>    
     <p>However, it is a completely different debate when it comes to “is twitter censoring people because they are conservatives?” The reason is it will touch on shadow banning, also people are different, and they get banned for different reasons. Since a more specific question is easier to answer, we only discuss Jones in this article.</p>
     <p>There is contentious debate on the <i>partiality</i> of the rules. There is a sentiment on the center and right that the rules do not apply / apply less to the left. Independent journalist Tim Pool mentioned during Joe Rogan’s podcast that twitter ignored his report of certain tweet threatening him while he was visiting Berkeley, but twitter took immediate action on tweet calling him a homosexual. This highlights the possible selective enforcement of rules regarding harassment, and implicit social justice agenda by twitter.</p>
     <p>To end off on a light note, there are also instances in which rules are enforced in <i>arbitrary</i> standards. Twitter banned a tweet because it incites hatred against elves. Fenris is a fictional character from video game Dragon Age. Fenris is an elf and slave in the video game. Apparently twitter’s algorithm mistook words "Fenris is an elven slave" in video game context as hatred in real life.</p>
-    <div style={{display:'flex',justifyContent:'center'}}>
+    <div>
       <TwitterTweetEmbed tweetId={'1013719738277683201'}/>
     </div> 
     <Share url="www.thetruspace.com/TwitterBansAlexJones" title="Why twitter banned Alex Jones - nuanced arguments from both sides"/>
